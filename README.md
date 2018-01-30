@@ -48,13 +48,13 @@ This module uses Google Play Services' powerful Tasks API to execute various ope
 	modules="{existing_module},org/godotengine/godot/GodotPlayGameServices"
 	```
 3. To use the module in GDScript:
-	- Godot versions lower than 3.0
+	- Godot 3.0 or above
 		```python
 		if Engine.has_singleton("GodotPlayGameServices"):
 			gpgs = Engine.get_singleton("GodotPlayGameServices")
 			gpgs.init(get_instance_id(), true)
 		```
-	- Godot 3.0 or above
+	- Godot versions lower than 3.0
 		```python
 		if(Globals.has_singleton("GodotPlayGameServices")):
 			gpgs = Globals.get_singleton("GodotPlayGameServices")
