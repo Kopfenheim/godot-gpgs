@@ -1,2 +1,2 @@
-<meta-data android:name="com.google.android.gms.games.APP_ID" android:value="\ {Your APP_ID here}" />
+<meta-data android:name="com.google.android.gms.games.APP_ID" android:value="\ {Your APP ID here}" />
 <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>

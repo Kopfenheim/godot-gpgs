@@ -12,7 +12,7 @@ public class PlayerInfo {
 
     private static final String[] GODOT_CALLBACK_FUNCTIONS = new String[] {
             "_on_play_game_services_player_icon_requested", //(String playerID, String folder, String fileName)
-            "_on_play_game_services_player_banner_portrait_requested", //(String playerID, String folder, String fileName)
+            "_on_play_game_services_player_banner_requested", //(String playerID, String folder, String fileName)
     };
 
     // Godot instance id needed to provide callback functionality in GDScript

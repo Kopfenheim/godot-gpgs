@@ -36,8 +36,7 @@ public class Client {
             "_on_play_game_services_sign_in_success", //(int signInType, String playerID)
             "_on_play_game_services_player_info_failure", //(int signInType)
             "_on_play_game_services_sign_in_failure", //(int signInType)
-            "_on_play_game_services_sign_out_success", //()
-            "_on_play_game_services_sign_out_failure" //()
+            "_on_play_game_services_sign_out", //(boolean success)
     };
 
     // Request code used to invoke sign in user interactions.
@@ -119,11 +118,11 @@ public class Client {
                 if (task.isSuccessful()) {
                     Log.d(TAG, "signOut(): success");
                     onDisconnected();
-                    GodotLib.calldeferred(instance_id, GODOT_CALLBACK_FUNCTIONS[3], new Object[] { });
+                    GodotLib.calldeferred(instance_id, GODOT_CALLBACK_FUNCTIONS[3], new Object[] { true });
                 } else {
                     int code = ((ApiException) task.getException()).getStatusCode();
                     Log.d(TAG, "signOut() failed with API Exception status code: " + code);
-                    GodotLib.calldeferred(instance_id, GODOT_CALLBACK_FUNCTIONS[4], new Object[] { });
+                    GodotLib.calldeferred(instance_id, GODOT_CALLBACK_FUNCTIONS[3], new Object[] { false });
                 }
             }
         });
