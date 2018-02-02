@@ -63,4 +63,4 @@ This module uses Google Play Services' powerful Tasks API to execute various ope
 4. Now, you should be able to call the functions in the `gpgs` object (singleton) in order to use the Google Play Game Services.
 
 ## Functions and Callbacks
-See the Wiki for a description of the various functions that you can call on the `gpgs` object and the various callbacks that you can listen for in your GDScript file
+See the [Wiki](https://github.com/Kopfenheim/godot-gpgs/wiki) for a description of the various functions that you can call on the `gpgs` object and the various callbacks that you can listen for in your GDScript file
