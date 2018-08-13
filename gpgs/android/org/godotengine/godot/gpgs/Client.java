@@ -141,7 +141,7 @@ public class Client {
                     Games.getGamesClient(activity, signedInAccount).setViewForPopups(activity.findViewById(android.R.id.content));
                 } else {
                     String message = result.getStatus().getStatusMessage();
-                    if (message != null || !message.isEmpty()) {
+                    if (message != null && !message.isEmpty()) {
                         Log.d(TAG, "Connection error. ApiException message: " + message);
                     }
                     onDisconnected();
